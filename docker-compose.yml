@@ -1,0 +1,17 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+  usopenBank :
+    image : mariadb:11.3.2
+    container_name : usopenBank
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: usopen12#
+      MARIADB_DATABASE : springboot
+      MARIADB_USER : monster
+      MARIADB_PASSWORD : usopen12#
+    volumes:
+      - ./master_db/data:/var/lib/mysql
+      - ./master_db/config/:/etc/mysql/conf.d
+    port :

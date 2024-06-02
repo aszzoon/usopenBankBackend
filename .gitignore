@@ -18,7 +18,7 @@ bin/
 !**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-application.properties
+application.yml
 .idea
 *.iws
 *.iml
@@ -26,6 +26,9 @@ application.properties
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
+# Ignore docker-compose.yml
+docker-compose.yml
 
 ### NetBeans ###
 /nbproject/private/
